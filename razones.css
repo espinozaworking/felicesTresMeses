@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding:0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(255, 248, 235);
+    text-align: center;
+    margin: 0px;
+}
+
+header{
+    background-color: #FFC6B8;
+    position: sticky;
+    text-align: left;
+    color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    gap: 100px;
+    width: 100%;
+} 
+
+
+header img{
+    margin-left: 100px;
+    width: 50px;
+}
+
+
+.navegacion a{
+    color: rgb(116, 33, 40);
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif ;
+}
+
+img{
+    width: 100px;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(116, 33, 40);
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Si usas un segundo h1 para los emoticonos o subtítulos decorativos */
+h1 + h1 {
+    color: #db4343;
+    font-weight: 400;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 200px;
+    max-width: 800px;
+    padding: 30px 20px;
+    background-color:rgb(250, 214, 180);
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card h2{
+    color:#33160E;
+    font-family: fredoka;
+}
+
+.card h2+h2{
+    color:#b93434;
+    font-family: fredoka;
+}
+
+footer{
+    background-color: #33160E;
+}
+
+.contenedor-footer a {
+    color:aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Fredoka';
+}
+
+.columna-footer a :hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+.contenedor-footer {
+    display:flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+footer h3{
+    text-align: center;
+    color: bisque;
+    font-family: 'fredoka';
+}
+
+.columna-footer ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+a:hover{
+    color:#db4343;
+    text-decoration: underline;
+}

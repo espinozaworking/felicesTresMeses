@@ -1,0 +1,126 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    background-color: #FFC6B8; /* El mismo fondo rosado de tus headers */
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    color: rgb(116, 33, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Títulos principales */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(190, 32, 46);
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(116, 33, 40);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Contenedor principal de la tarjeta */
+.card,  
+form {
+    background-color: rgb(255, 248, 235); /* Fondo color crema de tus otras páginas */
+    width: 80%;
+    max-width: 600px;
+    padding: 40px 30px;
+    border-radius: 25px; /* Bordes redondeados consistentes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+}
+
+/* Texto dentro de la tarjeta */
+.card p, 
+.card label {
+    font-size: 1.1rem;
+    color: rgb(34, 35, 53);
+    margin-bottom: 15px;
+}
+
+/* Estilo bonito para el input (campo de texto) */
+input[type="text"], 
+input[type="password"], 
+input[number] {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    width: 80%;
+    max-width: 300px;
+    border: 2px solid #bb5c58;
+    border-radius: 15px;
+    background-color: white;
+    color: rgb(34, 35, 53);
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: #b5a4a0;
+}
+
+input:focus {
+    border-color: #db4343; /* Se marca con un tono más vivo al seleccionarlo */
+    box-shadow: 0 0 8px rgba(219, 67, 67, 0.2);
+}
+
+/* Estilo para el botón de entrar */
+button, 
+input[type="submit"] {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #fda791;
+    color: rgb(116, 33, 40);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+button:hover, 
+input[type="submit"]:hover {
+    background-color: #db4343;
+    color: white;
+    transform: translateY(-2px); /* Pequeño efecto flotante al pasar el mouse */
+}
+
+/* Imagen del pingüino centrada y proporcional */
+img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    display: block;
+}

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 248, 235);
+    text-align: center;
+    margin: 0px;
+}
+
+header {
+    background-color: #FFC6B8;
+    position: sticky;
+    text-align: left;
+    color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    gap: 100px;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté siempre por encima */
+} 
+
+header img {
+    margin-left: 100px;
+    width: 50px;
+}
+
+.navegacion a {
+    color: rgb(116, 33, 40);
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Estilos mejorados para los H1 para que vayan acorde a la estética */
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(116, 33, 40);
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Si usas un segundo h1 para los emoticonos o subtítulos decorativos */
+h1 + h1 {
+    font-size: 3rem;
+    color: #db4343;
+    font-weight: 400;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+footer {
+    background-color: #33160E;
+}
+
+.contenedor-footer a {
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.columna-footer a:hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+footer h3 {
+    text-align: center;
+    color: bisque;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.columna-footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.navegacion :hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Solución definitiva para quitar el subrayado de los enlaces en las tarjetas */
+.card a {
+    text-decoration: none !important;
+}
+
+.card a, 
+.categoria > a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color para que no se ponga azul */
+}
+
+.card a:hover {
+    text-decoration: none !important;    
+}
+
+.emoji h1 {
+    font-size: 6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 300px;
+    max-width: 800px;
+    padding: 30px 20px;
+    background-color: #c4dbe9;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto;
+    background-image: url('../IMG/fondos/estrellas\ negro\ verdoso.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card h2 {
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none ;
+    font-size: xx-large;
+    color: rgb(37, 3, 46);
+}
+
+.card:hover {
+    h2{
+    color: #db4343; /* Un toque sutil al pasar el mouse por el título de la card */
+    text-decoration: none !important;
+    }
+}
+
+.card img {
+    max-width: 100%;  
+    width: 275px;      
+    height: auto;          
+    display: block;
+    margin: 0 auto 15px;
+}

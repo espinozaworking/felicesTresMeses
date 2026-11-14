@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 248, 235);
+    text-align: center;
+    margin: 0px;
+}
+
+header {
+    background-color: #FFC6B8;
+    position: sticky;
+    text-align: left;
+    color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    gap: 100px;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté siempre por encima */
+} 
+
+header img {
+    margin-left: 100px;
+    width: 50px;
+}
+
+.emoji h1 {
+    font-size: 6rem;
+}
+
+.navegacion a {
+    color: rgb(116, 33, 40);
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Estilos mejorados para los H1 para que vayan acorde a la estética */
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(116, 33, 40);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Si usas un segundo h1 para los emoticonos o subtítulos decorativos */
+h1 + h1 {
+    font-size: 1.5rem;
+    color: #db4343;
+    font-weight: 400;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+footer {
+    background-color: #33160E;
+}
+
+.contenedor-footer a {
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.columna-footer a:hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+footer h3 {
+    text-align: center;
+    color: bisque;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.columna-footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.navegacion a:hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Solución definitiva para quitar el subrayado de los enlaces en las tarjetas */
+.card a {
+    text-decoration: none !important;
+}
+
+.card a, 
+.categoria > a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color para que no se ponga azul */
+}
+
+.card a:hover {
+    text-decoration: none !important;    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 350px;
+    max-width: 800px;
+    padding: 30px 20px;
+    background-color: #c4dbe9;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto;
+    background-image: url('../IMG/fondos/estrellas\ azulgris.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card h2 {
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none ;
+    font-size: xx-large;
+    color: #46261e;
+}
+
+.card:hover {
+    h2{
+    color: #db4343; /* Un toque sutil al pasar el mouse por el título de la card */
+    text-decoration: none !important;
+    }
+}
+
+.card img {
+    max-width: 100%;  
+    width: 275px;      
+    height: auto;          
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.contenedor-flipbook {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: (255, 248, 235);
+    overflow: hidden;
+}
+
+/* El borde IZQUIERDO del flipbook es el lomo, y está en el 50% de la pantalla */
+.flipbook {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 500px;
+    margin-top: -250px;
+    perspective: 1800px;
+    cursor: pointer;
+}
+
+.hoja {
+    position: absolute;
+    inset: 0;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.hoja.volteada {
+    transform: rotateY(-180deg);
+}
+
+.cara {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Derecha: solo imagen */
+.frente {
+    border-radius: 0 8px 8px 0;
+    background: rgb(250, 237, 212);   /* fondo que rodea la imagen */
+    display: flex;
+    justify-content: center;          /* centrada a los lados */
+    align-items: center;              /* centrada hacia arriba y abajo */
+    padding: 20px;                    /* margen para que no toque los bordes */
+}
+
+.frente img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;              /* se ve completa, sin recortarse */
+    display: block;
+}
+
+.frente img {
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Izquierda: solo texto */
+.dorso {
+    transform: rotateY(180deg);
+    border-radius: 8px 0 0 8px;
+    background: rgb(250, 237, 212);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dorso h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(116, 33, 40);
+    margin-bottom: 15px;
+}
+
+.dorso p {
+    margin: 0;               /* anula el margin de 200px de tu regla global p */
+    font-size: 1.1rem;
+    color: #46261e;
+}
+
+.controles {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.controles button {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    background: #FFC6B8;
+    color: rgb(116, 33, 40);
+    cursor: pointer;
+}
+
+.controles button:hover:not(:disabled) { background: #db4343; color: white; }
+.controles button:disabled { opacity: 0.4; cursor: default; }
+
+.controles {
+    z-index: 5000;
+}
+
+.dorso p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.portada {
+    background: #FFC6B8;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-left: 8px solid rgb(116, 33, 40); /* efecto de lomo */
+}
+
+.portada h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+    color: rgb(116, 33, 40);
+    margin-bottom: 10px;
+}
+
+.portada p {
+    margin: 0;
+    color: #46261e;
+}

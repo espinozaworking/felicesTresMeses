@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding:0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(255, 248, 235);
+    text-align: center;
+    margin: 0px;
+}
+
+header{
+    background-color: #FFC6B8;
+    position: sticky;
+    text-align: left;
+    color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    gap: 100px;
+    width: 100%;
+} 
+
+
+header img{
+    margin-left: 100px;
+    width: 50px;
+}
+
+
+
+.navegacion a{
+    color: rgb(116, 33, 40);
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif ;
+}
+
+img{
+    width: 300px;
+    border-radius: 8%;
+}
+
+p{
+    text-align:center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: fredoka;
+    color:#33160E;
+    font-weight: 500;
+    font-size: large;
+}
+
+.centrado{
+    
+    text-align:left;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: fredoka;
+    color:#33160E;
+    font-weight: 500;
+    font-size: large;
+}
+
+h1{
+    font-family: fredoka;
+    color:#33160E;
+}
+
+h2{
+    font-family: Fredoka;
+    color: #db4343;
+    font-weight: 500;
+    font-size: x-large;
+    margin-left: 225px;
+    margin-right: 225px;
+}
+
+footer{
+    background-color: #33160E;
+}
+
+.contenedor-footer a {
+    color:aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Fredoka';
+}
+
+.columna-footer a :hover {
+    color: #db4343;
+    text-decoration: underline;
+}
+
+.contenedor-footer {
+    display:flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+footer h3{
+    text-align: center;
+    color: bisque;
+    font-family: 'fredoka';
+}
+
+.columna-footer ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+a:hover{
+    color:#db4343;
+    text-decoration: underline;
+}
